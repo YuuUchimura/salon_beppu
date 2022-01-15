@@ -1,0 +1,73 @@
+#first-v{    
+    height: 80rem;    
+    display: flex;
+    position: relative;
+
+    @include tab{
+        height: 59.7rem;
+        position: relative;
+    }
+}
+
+.kf{
+    width: 47%;
+    position: relative;
+
+    @include tab{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;   
+        text-align: center;
+    }
+    
+    .ja{
+        font-family: ヒラギノ明朝 Pro;
+        margin-bottom: 48px;
+        font-size: 3.8rem;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        @include tab{
+            color: #fff;
+            font-size: 2.3rem;
+            width: 100%;
+            right: 50%;
+        }
+    }
+    
+    .en{
+        width: 390px;
+        height: 128px;
+        font-family: Zapfino;
+        font-size: 3.8rem;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+         @include tab{
+            top: 50%;
+            display: block; 
+            color: #fff;
+            font-size: 2.8rem;
+        }
+    }
+}
+
+.first-v_img{
+    background-image: url("../img/Blond\ woman.png");
+    background-size: cover;
+    width: 53%;
+
+    @include tab{
+        width: 100%;
+        // position: relative;
+    }
+}

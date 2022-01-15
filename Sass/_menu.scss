@@ -1,0 +1,58 @@
+#menu{
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+
+    @include tab{
+            flex-direction: column;
+        }
+   
+
+    &-item{
+        width: 25%;
+
+        @include tab{
+            width: 100%;
+            margin-bottom: 6rem;
+        }
+        &:nth-child(3){
+            @include tab{                
+                margin-bottom: 0px;
+            }
+        }
+    }
+    
+
+        img{
+            @include tab{
+                width: 100%;
+            }
+        }
+
+    
+
+    &-title{
+        font-size: 3rem;
+        padding-top: 37px;
+
+        @include tab{
+            font-size: 3rem;
+        }
+    }
+
+    &-txt{
+        font-size: 1.6rem;
+        padding: 34px 0;
+        line-height: 1.6;
+    }
+
+    &-plice{
+        font-size: 1.6rem;
+        text-align: right;
+    }
+}
+

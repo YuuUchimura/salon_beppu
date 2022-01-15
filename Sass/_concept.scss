@@ -1,0 +1,72 @@
+#concept{
+    height: 100%;
+    background: linear-gradient(180deg, #A193861F 0%, #A193861F 42%, #A1938689 42%, #A1938689 100%);
+
+    @include tab{
+
+    }
+}
+.concept{
+    
+    &-text{
+        display: flex;
+        justify-content: center;
+        color: #fff;
+
+        @include tab{
+            flex-direction: column;
+        }
+    }
+
+    &-title{
+        font-family: ヒラギノ明朝 Pro;
+        margin-top: 9.2rem;
+        font-size: 3.8rem;
+        margin-right: 15rem;
+
+        @include tab{
+            font-size: 1.8rem;
+            margin: 5rem auto 1.8rem;
+        }
+    }
+
+    &-txt{
+        width: 32%;
+        margin-top: 6.9rem;
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+
+        @include tab{
+            margin: 0;
+            width: 100%;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.concept-img{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include tab{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left{
+        width: 62%;
+
+        @include tab{
+            width: 48%;
+        }
+    }
+
+    .right{
+        width: 36%;
+
+        @include tab{
+            width: 48%;
+        }
+    }    
+}
